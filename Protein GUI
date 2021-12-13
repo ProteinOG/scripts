@@ -51,7 +51,7 @@ Silent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Silent.Position = UDim2.new(0.0173693467, 0, 0.0148199117, 0)
 Silent.Size = UDim2.new(0, 613, 0, 39)
 Silent.Font = Enum.Font.SourceSans
-Silent.Text = "Aim Lock (E)"
+Silent.Text = "Silent Aim"
 Silent.TextColor3 = Color3.fromRGB(0, 0, 0)
 Silent.TextSize = 14.000
 Silent.MouseButton1Down:connect(function()
@@ -71,7 +71,7 @@ Silent.MouseButton1Down:connect(function()
 	local CurrentCamera = Workspace.CurrentCamera
 
 	local DaHoodSettings = {
-		SilentAim = false,
+		SilentAim = true,
 		AimLock = true,
 		Prediction = 0.165,
 		AimLockKeybind = Enum.KeyCode.E
