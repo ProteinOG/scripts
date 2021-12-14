@@ -245,7 +245,7 @@ DarkDex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DarkDex.Position = UDim2.new(0.0173693392, 0, 0.837141216, 0)
 DarkDex.Size = UDim2.new(0, 613, 0, 39)
 DarkDex.Font = Enum.Font.SourceSans
-DarkDex.Text = "Darkdex"
+DarkDex.Text = "Tp to blaze"
 DarkDex.TextColor3 = Color3.fromRGB(0, 0, 0)
 DarkDex.TextSize = 14.000
 DarkDex.MouseButton1Down:connect(function()
