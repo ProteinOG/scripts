@@ -181,11 +181,11 @@ PuppyWare.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PuppyWare.Position = UDim2.new(0.0173693467, 0, 0.751812518, 0)
 PuppyWare.Size = UDim2.new(0, 613, 0, 39)
 PuppyWare.Font = Enum.Font.SourceSans
-PuppyWare.Text = "PuppyWare"
+PuppyWare.Text = "Admin Base Food/RPG"
 PuppyWare.TextColor3 = Color3.fromRGB(0, 0, 0)
 PuppyWare.TextSize = 14.000
 PuppyWare.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/dahubgamepro123/puppy_priv/main/pro.lua"))()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-787.592407, -39.6492119, -932.579773, 0.959737241, -1.13479572e-08, 0.280899286, -2.28098163e-09, 1, 4.81920068e-08, -0.280899286, -4.68923886e-08, 0.959737241)
 end)
 
 school.Name = "school"
