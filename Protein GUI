@@ -262,11 +262,11 @@ gfus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 gfus.Position = UDim2.new(0.0173693467, 0, 0.917827368, 0)
 gfus.Size = UDim2.new(0, 613, 0, 39)
 gfus.Font = Enum.Font.SourceSans
-gfus.Text = "Go Fuck Yourself"
+gfus.Text = "Admin Base"
 gfus.TextColor3 = Color3.fromRGB(0, 0, 0)
 gfus.TextSize = 14.000
 gfus.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer:Remove()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-872.088928, -32.6492119, -528.224121, -0.577040315, 3.23357141e-09, -0.816715658, -3.25313252e-08, 1, 2.69438409e-08, 0.816715658, 4.21165254e-08, -0.577040315)
 end)
 
 X.Name = "X"
