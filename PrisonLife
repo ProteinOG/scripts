@@ -1,0 +1,184 @@
+--Made by Protein
+
+local prisonlife = Instance.new("ScreenGui")
+local main = Instance.new("ImageLabel")
+local ak = Instance.new("TextButton")
+local name = Instance.new("TextLabel")
+local remington = Instance.new("TextButton")
+local m9 = Instance.new("TextButton")
+local playername = Instance.new("TextBox")
+local tptoplr = Instance.new("TextButton")
+local comingsoon = Instance.new("TextButton")
+local yard = Instance.new("TextButton")
+local crimbase = Instance.new("TextButton")
+local police = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+prisonlife.Name = "prison life"
+prisonlife.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = prisonlife
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.0711043924, 0, 0.521212101, 0)
+main.Size = UDim2.new(0, 399, 0, 255)
+main.Image = "rbxassetid://3570695787"
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+main.Draggable = true
+
+ak.Name = "ak"
+ak.Parent = main
+ak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ak.Position = UDim2.new(0.137844622, 0, 0.317401946, 0)
+ak.Size = UDim2.new(0, 81, 0, 30)
+ak.Font = Enum.Font.SourceSans
+ak.Text = "Give AK-47"
+ak.TextColor3 = Color3.fromRGB(0, 0, 0)
+ak.TextSize = 14.000
+ak.MouseButton1Down:connect(function()
+	local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
+	local Event = game:GetService("Workspace").Remote.ItemHandler
+	Event:InvokeServer(A_1)
+end)
+
+name.Name = "name"
+name.Parent = main
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BorderColor3 = Color3.fromRGB(255, 255, 255)
+name.Position = UDim2.new(0.248120308, 0, 0.0625, 0)
+name.Size = UDim2.new(0, 200, 0, 50)
+name.Font = Enum.Font.SourceSans
+name.Text = "Prison Life v1"
+name.TextColor3 = Color3.fromRGB(0, 0, 0)
+name.TextScaled = true
+name.TextSize = 38.000
+name.TextWrapped = true
+
+remington.Name = "remington"
+remington.Parent = main
+remington.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+remington.Position = UDim2.new(0.137844622, 0, 0.476960778, 0)
+remington.Size = UDim2.new(0, 81, 0, 30)
+remington.Font = Enum.Font.SourceSans
+remington.Text = "Give Remington"
+remington.TextColor3 = Color3.fromRGB(0, 0, 0)
+remington.TextSize = 13.000
+remington.MouseButton1Down:connect(function()
+	local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
+	local Event = game:GetService("Workspace").Remote.ItemHandler
+	Event:InvokeServer(A_1)
+end)
+
+m9.Name = "m9"
+m9.Parent = main
+m9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+m9.Position = UDim2.new(0.137844622, 0, 0.642941177, 0)
+m9.Size = UDim2.new(0, 81, 0, 30)
+m9.Font = Enum.Font.SourceSans
+m9.Text = "Give m9"
+m9.TextColor3 = Color3.fromRGB(0, 0, 0)
+m9.TextSize = 13.000
+m9.MouseButton1Down:connect(function()
+	local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver.M9.ITEMPICKUP
+	local Event = game:GetService("Workspace").Remote.ItemHandler
+	Event:InvokeServer(A_1)
+end)
+
+playername.Name = "playername"
+playername.Parent = main
+playername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playername.Position = UDim2.new(0.591478705, 0, 0.75686276, 0)
+playername.Size = UDim2.new(0, 135, 0, 40)
+playername.Font = Enum.Font.SourceSans
+playername.Text = ""
+playername.TextColor3 = Color3.fromRGB(0, 0, 0)
+playername.TextSize = 14.000
+
+tptoplr.Name = "tptoplr"
+tptoplr.Parent = main
+tptoplr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptoplr.Position = UDim2.new(0.591478705, 0, 0.592156887, 0)
+tptoplr.Size = UDim2.new(0, 63, 0, 26)
+tptoplr.Font = Enum.Font.SourceSans
+tptoplr.Text = "Teleport"
+tptoplr.TextColor3 = Color3.fromRGB(0, 0, 0)
+tptoplr.TextSize = 14.000
+
+comingsoon.Name = "comingsoon"
+comingsoon.Parent = main
+comingsoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+comingsoon.Position = UDim2.new(0.77192986, 0, 0.592156887, 0)
+comingsoon.Size = UDim2.new(0, 63, 0, 26)
+comingsoon.Font = Enum.Font.SourceSans
+comingsoon.Text = "[Coming Soon]"
+comingsoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+comingsoon.TextSize = 12.000
+
+yard.Name = "yard"
+yard.Parent = main
+yard.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yard.Position = UDim2.new(0.39849624, 0, 0.317401946, 0)
+yard.Size = UDim2.new(0, 81, 0, 30)
+yard.Font = Enum.Font.SourceSans
+yard.Text = "Yard"
+yard.TextColor3 = Color3.fromRGB(0, 0, 0)
+yard.TextSize = 14.000
+yard.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(806.796814, 97.9999237, 2441.76001, 0.999577761, 7.97486166e-08, 0.0290563647, -7.72390791e-08, 1, -8.74901573e-08, -0.0290563647, 8.52089315e-08, 0.999577761)
+end)
+--protein made this gui
+crimbase.Name = "crimbase"
+crimbase.Parent = main
+crimbase.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+crimbase.Position = UDim2.new(0.659147859, 0, 0.317401946, 0)
+crimbase.Size = UDim2.new(0, 81, 0, 30)
+crimbase.Font = Enum.Font.SourceSans
+crimbase.Text = "Crim Base"
+crimbase.TextColor3 = Color3.fromRGB(0, 0, 0)
+crimbase.TextSize = 14.000
+crimbase.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-940.141907, 94.1287842, 2067.021, -0.0107769221, 9.10867755e-08, -0.999941945, -1.30941957e-09, 1, 9.11061804e-08, 0.999941945, 2.29118768e-09, -0.0107769221)
+end)
+
+police.Name = "police"
+police.Parent = main
+police.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+police.Position = UDim2.new(0.39849624, 0, 0.474264711, 0)
+police.Size = UDim2.new(0, 185, 0, 21)
+police.Font = Enum.Font.SourceSans
+police.Text = "Police Station"
+police.TextColor3 = Color3.fromRGB(0, 0, 0)
+police.TextSize = 14.000
+police.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(844.359436, 99.9899826, 2343.53442, -0.968278527, -2.57442512e-08, 0.249873444, -3.82415877e-08, 1, -4.515989e-08, -0.249873444, -5.3282907e-08, -0.968278527)
+end)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.0350877196, 0, 0.0350490212, 0)
+TextLabel.Size = UDim2.new(0, 78, 0, 26)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made by Protein"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 12.000
+TextLabel.TextWrapped = true
+
+tptoplr.MouseButton1Click:Connect(function()
+	local username = string.lower(playername.Text)
+	local foundChild = false
+	local child
+	for i,v in pairs (game.Players:GetChildren()) do
+		if string.lower(v.Name) == username then
+			foundChild = true
+			child = v
+		end
+	end
+	if foundChild == true then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.Character.HumanoidRootPart.CFrame
+	end
+end)
